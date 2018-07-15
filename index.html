@@ -10,79 +10,104 @@
   </head>
   <body>
     <section class="container">
+      <div class="status-bar"></div>
       <nav>
-        <div class="arrow-left">
-          <i class="fa fa-chevron-left fa-inverse fa-1.3x" aria-hidden="true"></i>
+        <div class="title-bar">
+          <div class="button">
+            <i class="fa fa-chevron-left fa-inverse fa-1x" aria-hidden="true"></i>
+            <span class="back">Options</span>
+          </div>
+          <span class="title">Buses</span>
         </div>
-        <h1 class="back">Options</h1>
-        <h1 class="title">Buses</h1>
-        <div class="search-bar"></div>
+        <div class="search-bar">
+          <div class="search">
+            <i class="fa fa-search fa-inverse fa-inverseGlass fa-1x" aria-hidden="true"></i>
+            <span class="address">Washington and State</span>
+          </div>
+        </div>
       </nav>
-      <section class="bus-list">
-        <div class="sub-menu">
-          <div class="name">Bus</div>
-          <div class="up">Fold</div>
-          <div class="arrow-up"</div>
-            <i class="fa fa-chevron-up fa-1.3x" aria-hidden="true"></i>
-          </div>
+      <div class="sub-menu">
+        <div class="icon-menu">
+          <i class="fa fa-bus fa-1x" aria-hidden="true"></i>
+          <span class="name">Bus</span>
+          <span class="up">Fold</span>
+          <i class="fa fa-chevron-up fa-inverse fa-inverseUp fa-1x" aria-hidden="true"></i>
         </div>
-        <div class="bus-stop">
-          <div class="destination">
-            <h2 class="bus-number">124</h2>
-            <h1 class="bus-destination">Navy Pier</h1>
-            <h3 class="bound">Eastbound</h3>
-            <h3 class="arrival">Due Now</h3>
-            <h3 class="frequency">Every 10 minutes</h3>
-            <div class="bus-route1"></div>
-          </div>
-        </div>
-        <div class="bus-stop">
-          <div class="destination">
-            <h2 class="bus-number">J14</h2>
-            <h1 class="bus-destination">103rd/Stony Island</h1>
-            <h3 class="bound">Southbound</h3>
-            <h3 class="arrival">In 3 min</h3>
-            <h3 class="frequency">Every 15 minutes</h3>
-            <div class="bus-route2"></div>
-          </div>
-        </div>
-        <div class="bus-stop">
-          <div class="destination">
-            <h2 class="bus-number">151</h2>
-            <h1 class="bus-destination">Old TOWN</h1>
-            <h3 class="bound">Northbound</h3>
-            <h3 class="arrival">In 4 min</h3>
-            <h3 class="frequency">Every 16 minutes</h3>
-            <div class="bus-route3"></div>
-          </div>
-        </div>
-        <div class="bus-stop">
-          <div class="destination">
-            <h2 class="bus-number">6x</h2>
-            <h1 class="bus-destination">Millennium Park</h1>
-            <h3 class="bound">Reroute</h3>
-            <h3 class="arrival">N/A</h3>
-            <h3 class="frequency">N/A</h3>
-            <div class="bus-route4"></div>
-          </div>
-        </div>
-        <div class="bus-stop">
-          <div class="destination">
-            <h2 class="bus-number">4</h2>
-            <h1 class="bus-destination">Cottage Grove</h1>
-            <h3 class="bound">Out of service</h3>
-            <h3 class="arrival">Resumes 12:10am</h3>
-          </div>
-        </div>
-        <div class="bus-stop">
-          <div class="destination">
-            <h2 class="bus-number">157</h2>
-            <h1 class="bus-destination">Streeterville/Taylor</h1>
-            <h3 class="bound">Out of service</h3>
-            <h3 class="arrival">Resumes 6:00am</h3>
-          </div>
-        </div>
-      </section>
+      </div>
+      <div class="bus-schedule">
+        <ul class="bus-list">
+          <li class="bus-stop">
+            <div class="destination">
+              <div class="numberRoute">
+                <span class="bus-number">124</span>
+                <h2 class="bus-destination">Navy Pier</h2>
+                <h3 class="arrival">Due Now</h3>
+              </div>
+              <div class="info">
+                <h3 class="bound">Eastbound</h3>
+                <h3 class="frequency">Every 10 minutes</h3>
+              </div>
+              <div class="bus-route"></div>
+            </div>
+          </li>
+          <li class="bus-stop">
+            <div class="destination">
+              <div class="numberRoute">
+                <span class="bus-number">J14</span>
+                <h2 class="bus-destination">103rd/Stony Island</h2>
+              </div>
+              <h3 class="bound">Southbound</h3>
+              <h3 class="arrival">In 3 min</h3>
+              <h3 class="frequency">Every 15 minutes</h3>
+              <div class="bus-route"></div>
+            </div>
+          </li>
+          <li class="bus-stop">
+            <div class="destination">
+              <div class="numberRoute">
+                <span class="bus-number">151</span>
+                <h2 class="bus-destination">Old Town</h2>
+              </div>
+              <h3 class="bound">Northbound</h3>
+              <h3 class="arrival">In 4 min</h3>
+              <h3 class="frequency">Every 16 minutes</h3>
+              <div class="bus-route"></div>
+            </div>
+          </li>
+          <li class="bus-stop">
+            <div class="destination">
+              <div class="numberRoute">
+                <span class="bus-number">6x</span>
+                <h2 class="bus-destination">Millennium Park</h2>
+              </div>
+              <h3 class="bound">Reroute</h3>
+              <h3 class="arrival">N/A</h3>
+              <h3 class="frequency">N/A</h3>
+              <div class="bus-route"></div>
+            </div>
+          </li>
+          <li class="bus-stop">
+            <div class="destination">
+              <div class="numberRoute">
+                <span class="bus-number">4</span>
+                <h2 class="bus-destination">Cottage Grove</h2>
+              </div>
+              <h3 class="bound">Out of service</h3>
+              <h3 class="arrival">Resumes 12:10am</h3>
+            </div>
+          </li>
+          <li class="bus-stop">
+            <div class="destination">
+              <div class="numberRoute">
+                <span class="bus-number">157</span>
+                <h2 class="bus-destination">Streeterville/Taylor</h2>
+              </div>
+              <h3 class="bound">Out of service</h3>
+              <h3 class="arrival">Resumes 6:00am</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
   </body>
 </html>

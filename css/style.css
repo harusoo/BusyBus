@@ -1,6 +1,6 @@
 @import url("https://use.fontawesome.com/37471687aa.js");
 body {
-  background-color: white;
+  background-color: gray;
   font-family: 'Aktiv Grotesk', Arial, sans-serif;
   font-size: 16px;
 }
@@ -11,73 +11,140 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 100%;
+  width: 375px;
+  height: 667px;
   font-family: sans-serif;
   background-color: #E7E7E7;
 }
 
-nav {
-  margin: 0 auto;
-  padding: 10px 0 15px 15px;
+.status-bar {
+  background-image: url("../images/status-bar1.jpg");
+  width: 375px;
+  height: 20px;
   position: fixed;
-  width: 100%;
-  background-color: #0E73E9;
-  font-size: 1em;
+  z-index: 1;
 }
 
-.fa-chevron-left .fa-inverse .fa-2x {
+nav {
+  margin: 0 auto;
+  padding-top: 20px;
+  position: fixed;
+  width: 375px;
+  height: 90px;
+  font-size: 1em;
+  z-index: 1;
+}
+
+.title-bar {
+  position: fixed;
+  height: 45px;
+  width: 375px;
+  margin: 0 auto;
+  background-color: #0E73E9;
+  line-height: 45px;
+  color: white;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.button {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.fa-chevron-left .fa-inverse .fa-1x {
   float: left;
-  padding: 2%;
 }
 
 .back {
-  float: left;
   font-weight: 500;
-  margin-left: 5%;
 }
 
 .title {
-  text-align: center;
-  font-weight: 700;
+  margin: 77px;
 }
 
 .search-bar {
-  background-image:
+  position: fixed;
+  top: 65px;
+  width: 375px;
+  height: 45px;
+  border: 1px;
+  background-color: #0E73E9;
 }
 
-.bus-list {
+.search {
   margin: 0 auto;
-  box-sizing: border-box;
-  padding: 23% 0 0 0;
+  padding: 6px 9px 7px 7px;
+  width: 359px;
+  height: 32px;
+  background-color: #FBFBFB;
+}
+
+.fa-search .fa-1x {
+  float: left;
+  color: #333333;
+}
+
+.fa-inverseGlass {
+  color: #333333 !important;
 }
 
 .sub-menu {
-  display: inline-block;
+  top: 110px;
+  position: fixed;
+  line-height: 44px;
   background-color: #F9F8F8;
-  padding: 5% 0 5% 0;
-  margin-bottom: 0.5%;
-  margin: solid #B1B1B1;
-  width: 100%;
+  width: 375px;
+  height: 44px;
   font-size: 1em;
+  z-index: 1;
 }
 
-.name {
+.icon-menu {
+  display: inline-block;
+  margin-left: 10px;
+  width: 365px;
+  height: 44px;
+  background-color: #F9F8F8;
+}
+
+.fa-bus .fa-1x {
   float: left;
+  padding-left: 20px;
+}
+
+}
+.name {
   font-weight: 700;
-  padding: 2% 2% 2% 10%;
 }
 
 .up {
-  float: right;
-  font-weight: 300;
-  padding: 2% 12% 2% 2%;
+  margin-left: 245px;
+  font-weight: 500;
 }
 
-.fa-chevron-up {
-  display: inline-block;
-  color: #007AFF;
+.fa-chevron-up .fa-1x {
   float: right;
-  width: 10%;
+  padding: 10%;
+}
+
+.fa-inverseUp {
+  color: #007AFF !important;
+}
+
+ul.bus-list {
+  position: relative;
+  list-style: none;
+  margin: 0 auto;
+  top: 158px;
+}
+
+li.bus-stop {
+  border-top: 1px;
+  width: 375px;
+  height: 133.40px;
+  border: 2px;
 }
 
 .destination {
@@ -91,5 +158,29 @@ nav {
 
 .destination:hover {
   opacity: 5;
-  background-color: gray;
+  background-color: #DEEFFF;
+}
+
+.numberRoute {
+  display: inline-block;
+  width: 200px;
+  height: 29px;
+}
+
+.bus-number {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: black;
+}
+
+h2 .bus-destination {
+  margin-left: 5px;
+}
+
+.bus-route {
+  background-image: url("bus-route.png");
+  width: 345px;
 }

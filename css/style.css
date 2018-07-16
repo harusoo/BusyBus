@@ -146,7 +146,7 @@ ul.bus-list {
   margin: solid #B1B1B1;
   padding: 7% 0 7% 0;
   width: 375px;
-  height: 140px;
+  height: 150px;
   border: 5px
 }
 
@@ -177,18 +177,40 @@ ul.bus-list {
   padding-top: 7px;
 }
 
-h2 .bus-destination {
-  margin-left: 3px;
-  width: 70px;
+.bus-destination {
+  float: left;
 }
 
 .arrival {
+  margin-top: 3px;
   float: right;
-  width: 80px;
   color: #27AE60;
+  font-size: 0.9em;
+}
+
+.info {
+  margin: 0 auto;
+  display: inline-block;
+  width: 346px;
+  height: 29px;
+  font-weight: 700;
+}
+
+.bound {
+  float: left;
+  margin-left: 50px;
+  font-size: 0.9em;
+  color: #060F64;
+}
+
+.frequency {
+  margin-top: 3px;
+  float: right;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: gray;
 }
 
 .bus-route {
   background-image: url("../images/bus-route.png");
-  width: 345px;
 }

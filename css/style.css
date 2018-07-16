@@ -162,6 +162,10 @@ ul.bus-list {
   border: 5px
 }
 
+.out-of-service {
+  height: 90px;
+}
+
 .destination:hover {
   opacity: 5;
   background-color: #DEEFFF;
@@ -212,7 +216,7 @@ ul.bus-list {
   float: left;
   margin-left: 50px;
   font-size: 0.9em;
-  color: #060F64;
+  color: #555B9A;
 }
 
 .frequency {
@@ -225,4 +229,7 @@ ul.bus-list {
 
 .bus-route {
   background-image: url("../images/bus-route.png");
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
 }

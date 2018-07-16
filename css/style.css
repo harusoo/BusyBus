@@ -82,6 +82,18 @@ nav {
   background-color: #FBFBFB;
 }
 
+.address {
+  margin-top: -5px;
+  width: 320px;
+  height: 30px;
+}
+
+input {
+  border: 0px solid;
+  background-color: transparent;
+  outline: none;
+}
+
 .fa-search .fa-1x {
   float: left;
   color: #333333;
